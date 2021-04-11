@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
-//import {Card} from './components/card/card.component';
+
 import './App.css';
 import { SearchBox } from './components/search-box/seach-box.component';
 
@@ -29,6 +29,7 @@ const filteredMonsters = monsters.filter(mon =>
 
     return (
       <div className="App">
+      <h1>Monsters rolodex</h1>
       <SearchBox
        placeholder='Search monsters' 
          handleChange={e=>this.setState({searchField:e.target.value})}
